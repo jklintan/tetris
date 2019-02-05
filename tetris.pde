@@ -31,14 +31,14 @@ if(keyPress){
 }
   
   
-if ((millis() - timer >= 800)){
+if ((millis() - timer >= 500)){
     g.update_pos(i-2, j, 1);
     g.update_pos(i-1, j, 1);
     g.update_pos(i-1, j+1, 1);
     g.update_pos(i, j+1, 1);
     g.printBoard();
     timer = millis();
-    delay(800);
+    delay(500);
     i++;
     if(i == rows)
       i = 1;
